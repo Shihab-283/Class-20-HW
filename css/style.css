@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: .5s;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+:root{
+    --bg-color: #fff;
+    --text-color: black;
+    --border-color: blue;
+}
+
+
+:root.dark{
+    --bg-color: rgb(26, 26, 53);
+    --text-color: white;
+    --border-color: black;   
+}
+
+
+body{
+    background-color: black;
+}
+.form{
+    width: 700px;
+    height: 700px;
+    background-color: var(--bg-color);
+    margin: auto;
+    margin-top: 120px;
+    padding-top: 250px;
+    border-radius: 20px;
+    position: relative;
+}
+.form .in-1,.in-2{
+    width: 250px;
+    height: 40px;
+    display: block;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    
+    
+}
+.form .in-1{
+    margin-left: 225px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 15px;
+    
+    
+}
+.form .in-2{
+    margin-left: 225px;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 15px;
+}
+.btn{
+    width: 150px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 275px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.eye{
+    border: none;
+    background: none;
+    position: absolute;
+    right: 235px;
+    top: 343px;
+    color: red;
+    cursor: pointer;
+}
+#validation_msg{
+    margin-left: 310px;
+    margin-top: 20px;
+}
+
+#mode-toggler{
+    font-size: 30px;
+    width: 40px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: var(--bg-color);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
